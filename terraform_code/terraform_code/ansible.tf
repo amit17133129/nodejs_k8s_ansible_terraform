@@ -7,7 +7,7 @@ resource "aws_instance" "Ansible_controller_node" {
   availability_zone      = element(var.az, count.index)
   subnet_id              = aws_subnet.subnet_public1_Lab1[count.index].id
   vpc_security_group_ids = [aws_security_group.TerraformSG[count.index].id]
-  key_name               = "anuj-aws-key"
+  key_name               = "key000000"
   tags = {
     Environment = var.environment_tag
     Name        = var.OSNames[0]
