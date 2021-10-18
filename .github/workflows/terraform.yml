@@ -19,4 +19,4 @@
     
 #       - name: Terraform Apply
 #         id: apply
-#         run: cd terraform_code  && terraform workspace new aws_prod && terraform init && terraform validate && terraform plan && terraform apply -auto-approve && sleep 300   && terraform destroy -auto-approve
+#         run: cd terraform_code/terraform_code  && terraform workspace new aws_prod && terraform init && terraform validate && terraform plan && terraform apply -auto-approve && sleep 300   && terraform destroy -auto-approve
