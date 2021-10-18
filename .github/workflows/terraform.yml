@@ -1,0 +1,22 @@
+# name: nodejs
+
+# on: [push, pull_request]
+
+# env:
+#   AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key }}
+#   AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
+
+# jobs:
+#   build:
+#     name: build
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+
+#       - name: Set up Terraform
+#         uses: hashicorp/setup-terraform@v1
+    
+#       - name: Terraform Apply
+#         id: apply
+#         run: cd terraform_code  && terraform workspace new aws_prod && terraform init && terraform validate && terraform plan && terraform apply -auto-approve && sleep 300   && terraform destroy -auto-approve
