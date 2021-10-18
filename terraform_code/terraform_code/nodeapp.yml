@@ -1,0 +1,14 @@
+- shell: "sudo mkdir /nodeapp"
+- shell: "sudo mv /home/ec2-user/Dockerfile  /nodeapp/Dockerfile"
+- shell: "sudo cp /home/ec2-user/index.html  /nodeapp/index.html"
+- shell: "sudo docker build -t amitsharma17133129/mynodeapp:v2    /nodeapp"
+- shell: "sudo docker login -u amitsharma17133129  -p  ABdevilliers@17"
+- shell: "sudo docker push amitsharma17133129/mynodeapp:v2"
+- name: "Launhing node pod"
+  shell: "kubectl run nodeapp --image=amitsharma17133129/mynodeapp:v2"
+
+- name: "creating service for nodeapp"
+  shell: "kubectl expose pod nodeapp --type=NodePort --port=80"
+
+- name: "get all"
+  shell: "kubectl get all"

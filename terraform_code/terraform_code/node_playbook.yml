@@ -1,0 +1,4 @@
+- hosts: ["tag_Name_K8S_Master"]
+  roles:
+  - name: "Configuring Master Node"
+    role:  "/home/ec2-user/nodeapp"
