@@ -1,0 +1,6 @@
+- name: Hello World Sample
+  hosts: "tag_Name_Minikube_Ansible_tower_awx_office_morning"
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
