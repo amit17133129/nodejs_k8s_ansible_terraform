@@ -1,5 +1,5 @@
 - name: Hello World Sample
-  hosts: "tag_Name_Minikube_Ansible_tower_awx_office_morning"
+  hosts: "3.6.92.169"
   tasks:
     - name: Hello Message
       debug:
