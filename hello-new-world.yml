@@ -4,3 +4,7 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+      register: hello
+    - name: "Displaying Output"
+      debug:
+         var: hello
