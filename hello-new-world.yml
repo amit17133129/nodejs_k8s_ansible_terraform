@@ -1,5 +1,5 @@
 - name: Hello World Sample
-  hosts: ["ec2-13-233-166-67.ap-south-1.compute.amazonaws.com", "ec2-13-233-36-231.ap-south-1.compute.amazonaws.com"]
+  hosts: "ec2-13-233-166-67.ap-south-1.compute.amazonaws.com", "ec2-13-233-36-231.ap-south-1.compute.amazonaws.com"
   tasks:
     - name: Hello Message
       debug:
